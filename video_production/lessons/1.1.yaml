@@ -1,0 +1,168 @@
+lesson_code: '1.1'
+title: Strong, Unique Passwords
+series: Demo Course
+level: Level 1 — Online Account Security (Demo)
+target_duration_minutes: 3
+voice:
+  name: en-US-AndrewMultilingualNeural
+  rate: -4%
+  pitch: -2Hz
+style:
+  background: warm ivory
+  primary: midnight navy
+  accent: antique gold
+  tone: calm, clear
+disclaimer: Sample lesson for demonstrating the video production pipeline.
+scenes:
+- id: opening
+  eyebrow: DEMO LESSON
+  headline: Strong, Unique Passwords
+  subhead: Why every account deserves its own password
+  visual: title
+  visual_content:
+    badge: Demo lesson
+  narration: 'Welcome to this sample lesson. It exists to demonstrate the automated video pipeline, which turns a written script into narrated,
+    captioned video. Our topic is simple and practical: why every online account should have its own strong password, and how a password manager
+    makes that realistic.'
+  covers:
+  - S11-REUSE
+- id: reuse
+  eyebrow: THE RISK
+  headline: One leak, many accounts
+  subhead: Password reuse turns a single breach into many
+  visual: comparison
+  visual_content:
+    cards:
+    - title: Reused password
+      bullets:
+      - One breach exposes many sites
+      - Attackers try it everywhere
+      - Damage spreads quickly
+    - title: Unique password
+      bullets:
+      - A breach stays contained
+      - Other accounts stay safe
+      - Easy to change one site
+  narration: When the same password is used on several sites, one leak can expose every account that shares it. Attackers routinely try leaked
+    passwords on email, shopping, and banking sites. If a site reports a breach, change that password and any account where it was reused. A unique
+    password limits the damage to one place.
+  covers:
+  - S11-REUSE
+  - S11-BREACH
+- id: strength
+  eyebrow: THE FOUNDATION
+  headline: Long and random wins
+  subhead: Length and randomness beat clever substitutions
+  visual: definition
+  visual_content:
+    items:
+    - - Long
+      - 'More characters,
+
+        more guesses'
+    - - Random
+      - 'No names
+
+        or dates'
+    - - Unique
+      - 'One password
+
+        per site'
+  narration: The strongest everyday choice is a long, random passphrase that is unique to one site. Names of pets, birth years, and common words
+    with a number on the end are easy to guess. Length and randomness matter far more than swapping a letter for a symbol.
+  covers:
+  - S11-LENGTH
+- id: manager
+  eyebrow: THE TOOL
+  headline: Let a password manager remember
+  subhead: Generate and store unique passwords securely
+  visual: framework
+  visual_content:
+    steps:
+    - - Install
+      - Choose a manager
+    - - Protect
+      - Strong master password
+    - - Generate
+      - Unique per site
+    - - Update
+      - Replace reused ones
+  narration: Nobody can memorize dozens of random passwords, which is why password managers exist. A password manager generates and stores unique
+    passwords securely. You protect it with one master password, which should be long, unique, and never shared with anyone.
+  covers:
+  - S11-MANAGER
+  - S11-MASTER
+- id: support
+  eyebrow: STAY ALERT
+  headline: Support never needs your password
+  subhead: Requests for passwords are a warning sign
+  visual: custody
+  visual_content:
+    cards:
+    - title: Do
+      bullets:
+      - Contact support yourself
+      - Use the official site
+      - Report the message
+    - title: Never
+      bullets:
+      - Share your password
+      - Read out a login code
+      - Click urgent links
+  narration: If a message claiming to be support asks for your password, refuse. Legitimate support teams do not need it. Requests for passwords,
+    codes, or recovery phrases are a classic sign of social engineering, no matter how official the message looks.
+  covers:
+  - S11-SHARE
+- id: recap
+  eyebrow: RECAP
+  headline: What to remember
+  subhead: Unique, long, managed, and private
+  visual: recap
+  visual_content:
+    points:
+    - Unique per site
+    - Long and random
+    - Use a manager
+    - Strong master password
+    - Change after breaches
+    - Never share it
+  narration: 'To recap: use a unique, long password for every account, let a password manager generate and store them, protect the manager with
+    a strong master password, change passwords after a breach, and never share a password with anyone who asks for it.'
+  covers:
+  - S11-REUSE
+  - S11-LENGTH
+  - S11-MANAGER
+  - S11-MASTER
+  - S11-BREACH
+  - S11-SHARE
+quiz_coverage:
+  S11-REUSE:
+    concept: Reuse lets one leak expose many accounts.
+    scenes:
+    - reuse
+    - recap
+  S11-LENGTH:
+    concept: Long, random, unique passphrases are strongest.
+    scenes:
+    - strength
+    - recap
+  S11-MANAGER:
+    concept: Password managers generate and store unique passwords.
+    scenes:
+    - manager
+    - recap
+  S11-MASTER:
+    concept: The master password must be long, unique, and private.
+    scenes:
+    - manager
+    - recap
+  S11-BREACH:
+    concept: After a breach, change the password everywhere it was reused.
+    scenes:
+    - reuse
+    - recap
+  S11-SHARE:
+    concept: Legitimate support never needs your password.
+    scenes:
+    - support
+    - recap

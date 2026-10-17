@@ -1,0 +1,703 @@
+# Public demo question bank. The production question bank is private.
+lesson_banks:
+  '0.1':
+  - id: D01-FLOW
+    prompt: In this demo course, what should a student do first in a lesson?
+    options: &id001
+    - Review the lesson material, then take the quiz
+    - Take the level exam immediately
+    - Ask staff for the answer key
+    - Skip to the final exam
+    correct: A
+    topic: Lesson flow
+  - id: D01-UNLOCK
+    prompt: What happens after a student passes a required lesson quiz?
+    options: &id002
+    - The next required lesson can unlock
+    - Every level unlocks at once
+    - The answer key is shown
+    - The student graduates
+    correct: A
+    topic: Progression
+  - id: D01-HELP
+    prompt: Where should a student ask a question about a lesson concept?
+    options: &id003
+    - The course chat channel
+    - A random direct message
+    - A pop-up asking for a password
+    - Nowhere; questions are not allowed
+    correct: A
+    topic: Getting help
+  - id: D01-STAFF
+    prompt: What kind of help do mentors provide in this demo?
+    options: &id004
+    - Explanations of concepts
+    - Complete quiz answer keys
+    - Requests for account passwords
+    - Guaranteed exam passes
+    correct: A
+    topic: Getting help
+  - id: D01-RANDOM
+    prompt: Why are quiz questions and answer choices shuffled?
+    options:
+    - So each attempt tests understanding rather than memorized positions
+    - To make quizzes impossible to pass
+    - Because the database is unordered
+    - To hide the lesson title
+    correct: A
+    topic: Quiz design
+  - id: D01-DEMO
+    prompt: What is the purpose of this sample course?
+    options:
+    - To demonstrate how the learning platform works
+    - To provide professional certification
+    - To give financial advice
+    - To replace a real curriculum
+    correct: A
+    topic: Course purpose
+  '0.2':
+  - id: D02-SCORE
+    prompt: What is the default passing score for quizzes and exams?
+    options: &id005
+    - 80%
+    - 50%
+    - 65%
+    - 100%
+    correct: A
+    topic: Passing score
+  - id: D02-79
+    prompt: A student scores 79% on a quiz. What happens?
+    options: &id006
+    - The attempt does not pass and can be retaken
+    - It rounds up to a pass
+    - The student is removed
+    - The next level unlocks
+    correct: A
+    topic: Passing score
+  - id: D02-PREREQ
+    prompt: What does a lesson prerequisite do?
+    options: &id007
+    - Keeps a lesson locked until the earlier lesson is passed
+    - Deletes earlier progress
+    - Skips the quiz
+    - Changes the passing score
+    correct: A
+    topic: Prerequisites
+  - id: D02-LEVEL
+    prompt: When can a student take a level exam?
+    options: &id008
+    - After completing every required lesson in that level
+    - At any time
+    - Only after graduating
+    - Before the first lesson
+    correct: A
+    topic: Level exams
+  - id: D02-FINAL
+    prompt: What must be finished before the final exam unlocks?
+    options:
+    - All published levels
+    - Only the first lesson
+    - Nothing
+    - One quiz attempt
+    correct: A
+    topic: Final exam
+  - id: D02-RETAKE
+    prompt: What can an administrator configure for retakes?
+    options:
+    - A cooldown period between attempts
+    - The student's display name
+    - The Discord server icon
+    - The correct answers shown to students
+    correct: A
+    topic: Retakes
+  '0.3':
+  - id: D03-CERT
+    prompt: What does a student receive after passing the final exam?
+    options: &id009
+    - A PDF certificate with a unique ID
+    - A cash prize
+    - Administrator permissions
+    - Access to other students' records
+    correct: A
+    topic: Certificates
+  - id: D03-UNIQUE
+    prompt: Why does each certificate have a unique ID and verification code?
+    options: &id010
+    - So a certificate can be verified and not duplicated
+    - To track student location
+    - To change the score later
+    - To unlock hidden lessons
+    correct: A
+    topic: Certificates
+  - id: D03-AUDIT
+    prompt: Why are staff overrides recorded in an audit log?
+    options: &id011
+    - So every manual change can be reviewed later
+    - To slow the bot down
+    - To publish student scores publicly
+    - To reset all progress
+    correct: A
+    topic: Audit trail
+  - id: D03-PRIVATE
+    prompt: How are staff command results shown in Discord?
+    options: &id012
+    - Privately to the staff member who ran them
+    - In every public channel
+    - By direct message to all students
+    - They are never shown
+    correct: A
+    topic: Privacy
+  - id: D03-DUP
+    prompt: What happens if a certificate is requested twice for the same graduate?
+    options:
+    - The existing certificate is returned instead of creating a duplicate
+    - A second certificate with a new ID is created
+    - The student loses graduate status
+    - The request crashes the bot
+    correct: A
+    topic: Certificates
+  - id: D03-BACKUP
+    prompt: Why should the database be backed up regularly?
+    options:
+    - So progress and certificate records can be restored
+    - To make quizzes easier
+    - To speed up Discord
+    - Backups are never needed
+    correct: A
+    topic: Operations
+  '1.1':
+  - id: S11-REUSE
+    prompt: Why is reusing one password on many sites risky?
+    options: &id013
+    - One leak can expose every account that shares it
+    - Sites cannot store reused passwords
+    - It makes logging in slower
+    - It is not risky at all
+    correct: A
+    topic: Password reuse
+  - id: S11-LENGTH
+    prompt: Which password is generally strongest?
+    options: &id014
+    - A long, random passphrase unique to one site
+    - A pet's name
+    - Your birth year
+    - The word 'password' with a 1
+    correct: A
+    topic: Password strength
+  - id: S11-MANAGER
+    prompt: What is a password manager mainly used for?
+    options: &id015
+    - Generating and storing unique passwords securely
+    - Sharing passwords publicly
+    - Turning off two-factor authentication
+    - Guessing other people's passwords
+    correct: A
+    topic: Password managers
+  - id: S11-MASTER
+    prompt: How should the password manager's master password be handled?
+    options: &id016
+    - Kept long, unique, and never shared
+    - Written in a public chat
+    - Reused from an old account
+    - Sent to support staff on request
+    correct: A
+    topic: Password managers
+  - id: S11-BREACH
+    prompt: What should you do after a site reports a password breach?
+    options:
+    - Change that password and any account where it was reused
+    - Ignore it
+    - Post the password to check it
+    - Delete your email account
+    correct: A
+    topic: Breach response
+  - id: S11-SHARE
+    prompt: A message claiming to be support asks for your password. What should you do?
+    options:
+    - Refuse; legitimate support does not need your password
+    - Send it quickly
+    - Send half of it
+    - Reply with your security questions instead
+    correct: A
+    topic: Social engineering
+  '1.2':
+  - id: S12-WHAT
+    prompt: What does two-factor authentication add to a login?
+    options: &id017
+    - A second proof of identity beyond the password
+    - A second username
+    - A longer loading screen
+    - Automatic password sharing
+    correct: A
+    topic: 2FA basics
+  - id: S12-LEAK
+    prompt: If a password leaks but 2FA is enabled, what usually happens?
+    options: &id018
+    - The attacker still needs the second factor
+    - The account is always lost
+    - 2FA turns itself off
+    - The password stops working for everyone
+    correct: A
+    topic: 2FA basics
+  - id: S12-APP
+    prompt: Which is generally stronger than SMS codes?
+    options: &id019
+    - An authenticator app or hardware security key
+    - Emailing codes to yourself
+    - Writing codes on a public post
+    - No second factor
+    correct: A
+    topic: 2FA methods
+  - id: S12-CODE
+    prompt: Someone asks you to read them a 2FA code you just received. What is likely happening?
+    options: &id020
+    - An attempt to take over your account
+    - Routine customer service
+    - A system update
+    - A prize notification
+    correct: A
+    topic: Social engineering
+  - id: S12-BACKUP
+    prompt: Why should 2FA backup codes be stored safely offline?
+    options:
+    - They let you recover access if your device is lost
+    - They are public information
+    - They speed up the internet
+    - They replace your password permanently
+    correct: A
+    topic: Recovery
+  - id: S12-PRIORITY
+    prompt: Which account is most important to protect with 2FA first?
+    options:
+    - Your primary email, which can reset other accounts
+    - A forum you never use
+    - A weather website
+    - A game demo account
+    correct: A
+    topic: Prioritizing
+  '1.3':
+  - id: S13-URGENT
+    prompt: Which is a common sign of a phishing message?
+    options: &id021
+    - Pressure to act urgently or lose access
+    - A calm, expected newsletter
+    - A message you requested
+    - Correct spelling of your name
+    correct: A
+    topic: Warning signs
+  - id: S13-LINK
+    prompt: What should you check before clicking a link in a message?
+    options: &id022
+    - Whether the real destination domain is the expected site
+    - The color of the button
+    - The number of emojis
+    - Nothing; links are always safe
+    correct: A
+    topic: Links
+  - id: S13-SAFE
+    prompt: What is the safest way to check a suspicious account alert?
+    options: &id023
+    - Open the official site or app directly instead of using the link
+    - Click the link and log in
+    - Reply with your password
+    - Forward it to all contacts
+    correct: A
+    topic: Safe response
+  - id: S13-ATTACH
+    prompt: An unexpected attachment arrives from an unknown sender. What should you do?
+    options: &id024
+    - Do not open it; verify through another channel first
+    - Open it immediately
+    - Forward it to colleagues
+    - Disable your antivirus
+    correct: A
+    topic: Attachments
+  - id: S13-DM
+    prompt: A stranger in a chat server offers a 'free reward' if you log in through their link. What is this most likely?
+    options:
+    - A phishing attempt
+    - An official giveaway
+    - A system update
+    - A safe shortcut
+    correct: A
+    topic: Chat scams
+  - id: S13-REPORT
+    prompt: What should you do after spotting a phishing message in a community server?
+    options:
+    - Report it to moderators without clicking it
+    - Click it to test it
+    - Repost it widely
+    - Ignore all future messages
+    correct: A
+    topic: Reporting
+level_exams:
+  '0':
+    exam_size: 10
+    questions:
+    - id: DEX0-01
+      prompt: In this demo course, what should a student do first in a lesson?
+      options: *id001
+      correct: A
+      topic: Lesson flow
+      source_lesson_code: '0.1'
+      source_question_id: D01-FLOW
+    - id: DEX0-02
+      prompt: What happens after a student passes a required lesson quiz?
+      options: *id002
+      correct: A
+      topic: Progression
+      source_lesson_code: '0.1'
+      source_question_id: D01-UNLOCK
+    - id: DEX0-03
+      prompt: Where should a student ask a question about a lesson concept?
+      options: *id003
+      correct: A
+      topic: Getting help
+      source_lesson_code: '0.1'
+      source_question_id: D01-HELP
+    - id: DEX0-04
+      prompt: What kind of help do mentors provide in this demo?
+      options: *id004
+      correct: A
+      topic: Getting help
+      source_lesson_code: '0.1'
+      source_question_id: D01-STAFF
+    - id: DEX0-05
+      prompt: What is the default passing score for quizzes and exams?
+      options: *id005
+      correct: A
+      topic: Passing score
+      source_lesson_code: '0.2'
+      source_question_id: D02-SCORE
+    - id: DEX0-06
+      prompt: A student scores 79% on a quiz. What happens?
+      options: *id006
+      correct: A
+      topic: Passing score
+      source_lesson_code: '0.2'
+      source_question_id: D02-79
+    - id: DEX0-07
+      prompt: What does a lesson prerequisite do?
+      options: *id007
+      correct: A
+      topic: Prerequisites
+      source_lesson_code: '0.2'
+      source_question_id: D02-PREREQ
+    - id: DEX0-08
+      prompt: When can a student take a level exam?
+      options: *id008
+      correct: A
+      topic: Level exams
+      source_lesson_code: '0.2'
+      source_question_id: D02-LEVEL
+    - id: DEX0-09
+      prompt: What does a student receive after passing the final exam?
+      options: *id009
+      correct: A
+      topic: Certificates
+      source_lesson_code: '0.3'
+      source_question_id: D03-CERT
+    - id: DEX0-10
+      prompt: Why does each certificate have a unique ID and verification code?
+      options: *id010
+      correct: A
+      topic: Certificates
+      source_lesson_code: '0.3'
+      source_question_id: D03-UNIQUE
+    - id: DEX0-11
+      prompt: Why are staff overrides recorded in an audit log?
+      options: *id011
+      correct: A
+      topic: Audit trail
+      source_lesson_code: '0.3'
+      source_question_id: D03-AUDIT
+    - id: DEX0-12
+      prompt: How are staff command results shown in Discord?
+      options: *id012
+      correct: A
+      topic: Privacy
+      source_lesson_code: '0.3'
+      source_question_id: D03-PRIVATE
+  '1':
+    exam_size: 10
+    questions:
+    - id: DEX1-01
+      prompt: Why is reusing one password on many sites risky?
+      options: *id013
+      correct: A
+      topic: Password reuse
+      source_lesson_code: '1.1'
+      source_question_id: S11-REUSE
+    - id: DEX1-02
+      prompt: Which password is generally strongest?
+      options: *id014
+      correct: A
+      topic: Password strength
+      source_lesson_code: '1.1'
+      source_question_id: S11-LENGTH
+    - id: DEX1-03
+      prompt: What is a password manager mainly used for?
+      options: *id015
+      correct: A
+      topic: Password managers
+      source_lesson_code: '1.1'
+      source_question_id: S11-MANAGER
+    - id: DEX1-04
+      prompt: How should the password manager's master password be handled?
+      options: *id016
+      correct: A
+      topic: Password managers
+      source_lesson_code: '1.1'
+      source_question_id: S11-MASTER
+    - id: DEX1-05
+      prompt: What does two-factor authentication add to a login?
+      options: *id017
+      correct: A
+      topic: 2FA basics
+      source_lesson_code: '1.2'
+      source_question_id: S12-WHAT
+    - id: DEX1-06
+      prompt: If a password leaks but 2FA is enabled, what usually happens?
+      options: *id018
+      correct: A
+      topic: 2FA basics
+      source_lesson_code: '1.2'
+      source_question_id: S12-LEAK
+    - id: DEX1-07
+      prompt: Which is generally stronger than SMS codes?
+      options: *id019
+      correct: A
+      topic: 2FA methods
+      source_lesson_code: '1.2'
+      source_question_id: S12-APP
+    - id: DEX1-08
+      prompt: Someone asks you to read them a 2FA code you just received. What is likely happening?
+      options: *id020
+      correct: A
+      topic: Social engineering
+      source_lesson_code: '1.2'
+      source_question_id: S12-CODE
+    - id: DEX1-09
+      prompt: Which is a common sign of a phishing message?
+      options: *id021
+      correct: A
+      topic: Warning signs
+      source_lesson_code: '1.3'
+      source_question_id: S13-URGENT
+    - id: DEX1-10
+      prompt: What should you check before clicking a link in a message?
+      options: *id022
+      correct: A
+      topic: Links
+      source_lesson_code: '1.3'
+      source_question_id: S13-LINK
+    - id: DEX1-11
+      prompt: What is the safest way to check a suspicious account alert?
+      options: *id023
+      correct: A
+      topic: Safe response
+      source_lesson_code: '1.3'
+      source_question_id: S13-SAFE
+    - id: DEX1-12
+      prompt: An unexpected attachment arrives from an unknown sender. What should you do?
+      options: *id024
+      correct: A
+      topic: Attachments
+      source_lesson_code: '1.3'
+      source_question_id: S13-ATTACH
+final_exam:
+  exam_size: 20
+  passing_score: 80
+  questions:
+  - id: DFINAL-001
+    prompt: In this demo course, what should a student do first in a lesson?
+    options: *id001
+    correct: A
+    topic: Lesson flow
+    source_level: 0
+    source_lesson_code: '0.1'
+    source_question_id: D01-FLOW
+  - id: DFINAL-002
+    prompt: What happens after a student passes a required lesson quiz?
+    options: *id002
+    correct: A
+    topic: Progression
+    source_level: 0
+    source_lesson_code: '0.1'
+    source_question_id: D01-UNLOCK
+  - id: DFINAL-003
+    prompt: Where should a student ask a question about a lesson concept?
+    options: *id003
+    correct: A
+    topic: Getting help
+    source_level: 0
+    source_lesson_code: '0.1'
+    source_question_id: D01-HELP
+  - id: DFINAL-004
+    prompt: What kind of help do mentors provide in this demo?
+    options: *id004
+    correct: A
+    topic: Getting help
+    source_level: 0
+    source_lesson_code: '0.1'
+    source_question_id: D01-STAFF
+  - id: DFINAL-005
+    prompt: What is the default passing score for quizzes and exams?
+    options: *id005
+    correct: A
+    topic: Passing score
+    source_level: 0
+    source_lesson_code: '0.2'
+    source_question_id: D02-SCORE
+  - id: DFINAL-006
+    prompt: A student scores 79% on a quiz. What happens?
+    options: *id006
+    correct: A
+    topic: Passing score
+    source_level: 0
+    source_lesson_code: '0.2'
+    source_question_id: D02-79
+  - id: DFINAL-007
+    prompt: What does a lesson prerequisite do?
+    options: *id007
+    correct: A
+    topic: Prerequisites
+    source_level: 0
+    source_lesson_code: '0.2'
+    source_question_id: D02-PREREQ
+  - id: DFINAL-008
+    prompt: When can a student take a level exam?
+    options: *id008
+    correct: A
+    topic: Level exams
+    source_level: 0
+    source_lesson_code: '0.2'
+    source_question_id: D02-LEVEL
+  - id: DFINAL-009
+    prompt: What does a student receive after passing the final exam?
+    options: *id009
+    correct: A
+    topic: Certificates
+    source_level: 0
+    source_lesson_code: '0.3'
+    source_question_id: D03-CERT
+  - id: DFINAL-010
+    prompt: Why does each certificate have a unique ID and verification code?
+    options: *id010
+    correct: A
+    topic: Certificates
+    source_level: 0
+    source_lesson_code: '0.3'
+    source_question_id: D03-UNIQUE
+  - id: DFINAL-011
+    prompt: Why are staff overrides recorded in an audit log?
+    options: *id011
+    correct: A
+    topic: Audit trail
+    source_level: 0
+    source_lesson_code: '0.3'
+    source_question_id: D03-AUDIT
+  - id: DFINAL-012
+    prompt: How are staff command results shown in Discord?
+    options: *id012
+    correct: A
+    topic: Privacy
+    source_level: 0
+    source_lesson_code: '0.3'
+    source_question_id: D03-PRIVATE
+  - id: DFINAL-013
+    prompt: Why is reusing one password on many sites risky?
+    options: *id013
+    correct: A
+    topic: Password reuse
+    source_level: 1
+    source_lesson_code: '1.1'
+    source_question_id: S11-REUSE
+  - id: DFINAL-014
+    prompt: Which password is generally strongest?
+    options: *id014
+    correct: A
+    topic: Password strength
+    source_level: 1
+    source_lesson_code: '1.1'
+    source_question_id: S11-LENGTH
+  - id: DFINAL-015
+    prompt: What is a password manager mainly used for?
+    options: *id015
+    correct: A
+    topic: Password managers
+    source_level: 1
+    source_lesson_code: '1.1'
+    source_question_id: S11-MANAGER
+  - id: DFINAL-016
+    prompt: How should the password manager's master password be handled?
+    options: *id016
+    correct: A
+    topic: Password managers
+    source_level: 1
+    source_lesson_code: '1.1'
+    source_question_id: S11-MASTER
+  - id: DFINAL-017
+    prompt: What does two-factor authentication add to a login?
+    options: *id017
+    correct: A
+    topic: 2FA basics
+    source_level: 1
+    source_lesson_code: '1.2'
+    source_question_id: S12-WHAT
+  - id: DFINAL-018
+    prompt: If a password leaks but 2FA is enabled, what usually happens?
+    options: *id018
+    correct: A
+    topic: 2FA basics
+    source_level: 1
+    source_lesson_code: '1.2'
+    source_question_id: S12-LEAK
+  - id: DFINAL-019
+    prompt: Which is generally stronger than SMS codes?
+    options: *id019
+    correct: A
+    topic: 2FA methods
+    source_level: 1
+    source_lesson_code: '1.2'
+    source_question_id: S12-APP
+  - id: DFINAL-020
+    prompt: Someone asks you to read them a 2FA code you just received. What is likely happening?
+    options: *id020
+    correct: A
+    topic: Social engineering
+    source_level: 1
+    source_lesson_code: '1.2'
+    source_question_id: S12-CODE
+  - id: DFINAL-021
+    prompt: Which is a common sign of a phishing message?
+    options: *id021
+    correct: A
+    topic: Warning signs
+    source_level: 1
+    source_lesson_code: '1.3'
+    source_question_id: S13-URGENT
+  - id: DFINAL-022
+    prompt: What should you check before clicking a link in a message?
+    options: *id022
+    correct: A
+    topic: Links
+    source_level: 1
+    source_lesson_code: '1.3'
+    source_question_id: S13-LINK
+  - id: DFINAL-023
+    prompt: What is the safest way to check a suspicious account alert?
+    options: *id023
+    correct: A
+    topic: Safe response
+    source_level: 1
+    source_lesson_code: '1.3'
+    source_question_id: S13-SAFE
+  - id: DFINAL-024
+    prompt: An unexpected attachment arrives from an unknown sender. What should you do?
+    options: *id024
+    correct: A
+    topic: Attachments
+    source_level: 1
+    source_lesson_code: '1.3'
+    source_question_id: S13-ATTACH

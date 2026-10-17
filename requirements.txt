@@ -1,0 +1,7 @@
+# Production dependencies. Compatible release ranges avoid accidental breaking major upgrades.
+discord.py>=2.6,<3
+SQLAlchemy>=2.0.44,<2.1
+PyYAML>=6.0.2,<7
+python-dotenv>=1.1,<2
+reportlab>=4.4,<6
+Pillow>=10,<13

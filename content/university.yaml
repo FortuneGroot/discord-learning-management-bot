@@ -1,0 +1,153 @@
+# Public demo course. The production curriculum is private.
+levels:
+- number: 0
+  slug: getting-started
+  title: Getting Started (Demo)
+  description: 'How this sample course works: lessons, quizzes, exams, and certificates.'
+  order: 0
+  passing_score: 80
+  exam_size: 10
+  published: true
+  lessons:
+  - code: '0.1'
+    title: Welcome to the Demo Course
+    description: See how a lesson, its quiz, and progression fit together.
+    order: 1
+    video_url: ''
+    video_provider: youtube_unlisted
+    video_duration_minutes: 5
+    professor: Demo Faculty
+    objectives:
+    - Describe the lesson-then-quiz flow.
+    - Explain what passing a lesson unlocks.
+    topics:
+    - Course purpose
+    - Getting help
+    - Lesson flow
+    - Progression
+    - Quiz design
+    supporting_notes: Sample lesson content written for the public demo.
+    quiz_size: 5
+    published: true
+  - code: '0.2'
+    title: How Progression Works
+    description: Learn about prerequisites, the passing score, level exams, and the final exam.
+    order: 2
+    video_url: ''
+    video_provider: youtube_unlisted
+    video_duration_minutes: 5
+    professor: Demo Faculty
+    objectives:
+    - State the default passing score.
+    - Distinguish quizzes, level exams, and the final exam.
+    topics:
+    - Final exam
+    - Level exams
+    - Passing score
+    - Prerequisites
+    - Retakes
+    supporting_notes: Sample lesson content written for the public demo.
+    quiz_size: 5
+    published: true
+    prerequisite: '0.1'
+  - code: '0.3'
+    title: Certificates and Records
+    description: Understand graduation, certificates, and why records are audited.
+    order: 3
+    video_url: ''
+    video_provider: youtube_unlisted
+    video_duration_minutes: 5
+    professor: Demo Faculty
+    objectives:
+    - Explain how a certificate is issued.
+    - Describe why staff actions are audited.
+    topics:
+    - Audit trail
+    - Certificates
+    - Operations
+    - Privacy
+    supporting_notes: Sample lesson content written for the public demo.
+    quiz_size: 5
+    published: true
+    prerequisite: '0.2'
+- number: 1
+  slug: account-security
+  title: Online Account Security (Demo)
+  description: A short sample level on protecting online accounts.
+  order: 1
+  passing_score: 80
+  exam_size: 10
+  published: true
+  lessons:
+  - code: '1.1'
+    title: Strong, Unique Passwords
+    description: Why every account needs its own long password and how a password manager helps.
+    order: 1
+    video_url: ''
+    video_provider: youtube_unlisted
+    video_duration_minutes: 5
+    professor: Demo Faculty
+    objectives:
+    - Explain why password reuse is risky.
+    - Describe what a password manager does.
+    topics:
+    - Breach response
+    - Password managers
+    - Password reuse
+    - Password strength
+    - Social engineering
+    supporting_notes: Sample lesson content written for the public demo.
+    quiz_size: 5
+    published: true
+  - code: '1.2'
+    title: Two-Factor Authentication
+    description: How a second factor protects an account even if a password leaks.
+    order: 2
+    video_url: ''
+    video_provider: youtube_unlisted
+    video_duration_minutes: 5
+    professor: Demo Faculty
+    objectives:
+    - Explain what a second factor adds.
+    - Compare common second-factor methods.
+    topics:
+    - 2FA basics
+    - 2FA methods
+    - Prioritizing
+    - Recovery
+    - Social engineering
+    supporting_notes: Sample lesson content written for the public demo.
+    quiz_size: 5
+    published: true
+    prerequisite: '1.1'
+  - code: '1.3'
+    title: Recognizing Phishing
+    description: Spot common warning signs in messages and links before clicking.
+    order: 3
+    video_url: ''
+    video_provider: youtube_unlisted
+    video_duration_minutes: 5
+    professor: Demo Faculty
+    objectives:
+    - Identify common phishing signals.
+    - Choose a safe response to a suspicious message.
+    topics:
+    - Attachments
+    - Chat scams
+    - Links
+    - Reporting
+    - Safe response
+    - Warning signs
+    supporting_notes: Sample lesson content written for the public demo.
+    quiz_size: 5
+    published: true
+    prerequisite: '1.2'
+assignments:
+- id: demo-security-checklist
+  level: 1
+  lesson: '1.3'
+  title: Personal Security Checklist
+  instructions: Submit a short checklist of the accounts you secured with unique passwords and 2FA. Never include passwords or codes.
+  enabled: false
+  required: false
+referral_partners: []
