@@ -105,4 +105,4 @@ I designed and directed this project and built it with AI coding assistants, inc
 
 ## License
 
-Copyright Â© 2026 George (FortuneGroot). All rights reserved. This code is published for portfolio review. No license is granted for reuse or redistribution without permission.
+Copyright © 2026 George (FortuneGroot). All rights reserved. This code is published for portfolio review. No license is granted for reuse or redistribution without permission.
